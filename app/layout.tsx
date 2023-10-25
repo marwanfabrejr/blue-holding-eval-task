@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} overflow-scroll`}>
+      <body className={inter.className}>
         <Providers>
           <ToasterContext />
           <Navbar />
