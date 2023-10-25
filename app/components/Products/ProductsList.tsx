@@ -9,15 +9,12 @@ const ProductsList = (fetchedProducts: any) => {
   const [grid, setGrid] = useState(false)
   const products = fetchedProducts.fetchedProducts
 
-  // console.log(products)
-
   return (
     <section>
       <div className='flex justify-end px-4 pt-8 max-sm:hidden'>
         <div
           onClick={(): any => {
             setGrid(!grid)
-            // console.log(grid)
           }}
         >
           <ToggleSwitch />

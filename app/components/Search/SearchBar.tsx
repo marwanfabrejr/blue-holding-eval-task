@@ -39,9 +39,6 @@ const SearchBar = (fetchedProducts: any, allProducts: any) => {
   const updateSearchParams = (title: string, category: string) => {
     const searchParams = new URLSearchParams(window.location.search)
 
-    // console.log(title)
-    // console.log(category)
-
     if (title) {
       searchParams.set('title', title)
     } else if ((title = ' ')) {
@@ -52,7 +49,6 @@ const SearchBar = (fetchedProducts: any, allProducts: any) => {
     }
 
     const newPathname = `${window.location.pathname}?${searchParams.toString()}`
-    // console.log(newPathname)
 
     router.push(newPathname, { scroll: false })
   }

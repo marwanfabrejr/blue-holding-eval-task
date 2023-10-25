@@ -25,9 +25,7 @@ const SearchCategory = ({ category, setCategory }: SearchCategoryProps) => {
         filteredCategories.unshift('All Products')
         setFilteredCategories(filteredCategories)
       })
-      .catch((err) => {
-        // console.log(err)
-      })
+      .catch((err) => {})
   }, [])
 
   return (

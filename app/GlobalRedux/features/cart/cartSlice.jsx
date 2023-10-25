@@ -15,11 +15,10 @@ const cartSlice = createSlice({
       state.amount = 0
     },
     addToCart: (state, { payload }) => {
-      // console.log(payload)
       const myCart = JSON.parse(state.cartItems)
       state.amount++
       let index = myCart.findIndex((item) => item.id == payload.id)
-      // console.log(index)
+
       if (index < 0) {
         payload.amount++
         myCart.push(payload)
