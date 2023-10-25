@@ -13,7 +13,7 @@ const ProductsList = (fetchedProducts: any) => {
 
   return (
     <section>
-      <div className='flex justify-end px-4 pt-8'>
+      <div className='flex justify-end px-4 pt-8 max-sm:hidden'>
         <div
           onClick={(): any => {
             setGrid(!grid)

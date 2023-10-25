@@ -26,7 +26,6 @@ export default function Home({ searchParams }: any) {
 
   return (
     <main className='overflow-hidden'>
-      (
       <div className='mt-4 padding-x padding-y max-width '>
         <div className='flex flex-col items-start justify-start gap-y-2.5 text-black-100'>
           <h1 className='text-4xl font-extrabold'>Products</h1>
@@ -41,7 +40,6 @@ export default function Home({ searchParams }: any) {
         </div>
         <ProductsList fetchedProducts={fetchedProducts} />
       </div>
-      )
     </main>
   )
 }
