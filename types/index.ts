@@ -12,6 +12,7 @@ export interface ProductProps {
     count: number
   }
   amount?: number
+  key?: number
 }
 
 export interface CustomButtonProps {

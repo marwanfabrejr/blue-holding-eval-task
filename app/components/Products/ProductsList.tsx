@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import ProductCard from './ProductCard'
 import ToggleSwitch from '../ToggleSwitch'
 import clsx from 'clsx'
+import { ProductProps } from '@/types'
 
 const ProductsList = (fetchedProducts: any) => {
   const [grid, setGrid] = useState(false)
@@ -13,7 +14,7 @@ const ProductsList = (fetchedProducts: any) => {
     <section>
       <div className='flex justify-end px-4 pt-8 max-sm:hidden'>
         <div
-          onClick={(): any => {
+          onClick={(): void => {
             setGrid(!grid)
           }}
         >
@@ -28,7 +29,7 @@ const ProductsList = (fetchedProducts: any) => {
             'grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14'
         )}
       >
-        {products.map((product: any) => (
+        {products.map((product: ProductProps) => (
           <ProductCard product={product} key={product.id} />
         ))}
       </div>

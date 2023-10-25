@@ -16,7 +16,7 @@ const SearchCategory = ({ category, setCategory }: SearchCategoryProps) => {
         const filteredCategories: any =
           query === ''
             ? res
-            : res.filter((item: any) =>
+            : res.filter((item: string) =>
                 item
                   .toLowerCase()
                   .replace(/\s+/g, '')

@@ -4,7 +4,7 @@ import ReactSwitch from 'react-switch'
 function ToggleSwitch() {
   const [checked, setChecked] = useState(false)
 
-  const handleChange = (val: any) => {
+  const handleChange = (val: number) => {
     setChecked(val)
   }
 

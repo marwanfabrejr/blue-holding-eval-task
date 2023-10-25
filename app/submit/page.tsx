@@ -12,12 +12,12 @@ const Home = () => {
   const [valid, setValid] = useState(true)
   const [phoneNumber, setPhoneNumber] = useState('')
 
-  const handleChange = (value: any) => {
+  const handleChange = (value: string) => {
     setPhoneNumber(value)
     setValid(validatePhoneNumber(value))
   }
 
-  const validatePhoneNumber = (phoneNumber: any) => {
+  const validatePhoneNumber = (phoneNumber: string) => {
     const phoneNumberPattern = /^\d{11}$/
     return phoneNumberPattern.test(phoneNumber)
   }
