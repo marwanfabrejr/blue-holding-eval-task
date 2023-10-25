@@ -1,0 +1,37 @@
+{
+  "name": "blueholding-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@reduxjs/toolkit": "^1.9.7",
+    "axios": "^1.5.1",
+    "clsx": "^2.0.0",
+    "firebase": "^10.5.0",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.47.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.11.0",
+    "react-phone-number-input": "^3.3.7",
+    "react-preloaders": "^3.0.3",
+    "react-redux": "^8.1.3",
+    "react-switch": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5"
+  }
+}
